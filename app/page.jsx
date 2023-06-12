@@ -7,21 +7,24 @@ import githubIcon from '../public/github.png'
 import youtubeIcon from '../public/youtube.png'
 import linkedinIcon from '../public/linkedin.png'
 import instagramIcon from '../public/instagram.png'
+import gmailIcom from '../public/gmail.png'
 
 export default function Home() {
   return  (
       <main className={styles.container}>
         <section className={styles.SectionMainImage}>
-          <Image 
+            <div className={styles.textMainContent}>
+              <p className={styles.textmain}>Links</p>
+              <p className={styles.textmain}>Coding</p>
+              <p className={styles.textmain}>Tech</p>
+            </div>
+            <div className={styles.imagecontent}>
+             <Image 
             src={myImage}
             alt='foto de Yure sorrindo, com boné branco, camiseta branca'
             className={styles.mainImage}
             />
-            <div className={styles.textMainContent}>
-              <h1 className={styles.textmain1}>Yure</h1>
-              <h1 className={styles.textmain2}>Coding</h1>
-              <h1 className={styles.textmain3}>Tech</h1>
-            </div>
+          </div>
         </section>
 
           <h1 className={styles.myName}>Yure Ribeiro</h1>
@@ -58,6 +61,11 @@ export default function Home() {
                   />
                </a>
             </div>
+
+            <section className={styles.sectionEmail}>
+              <Image src={gmailIcom} className={styles.imageGmail}/>
+               <p className={styles.textEmail}>Me mande um Email</p>
+            </section>
 
             <section className={styles.sectionYureWeb}>
                 <a href='#' className={styles.linkYureWeb}>
