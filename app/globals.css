@@ -4,7 +4,21 @@
   margin: 0;
 }
 
+@keyframes cardAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  max-width: 100vw;
-  height: 100vw;
+  height: 100%;
+  background: linear-gradient(150deg, #000000 5%, #227cb7 90%);
+  background-size: 200% 200%;
+  animation: cardAnimation 2s infite;
 }

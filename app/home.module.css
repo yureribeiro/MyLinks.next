@@ -1,80 +1,82 @@
-@keyframes cardAnimation {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .container {
   display: flex;
-  flex-direction: column;
-  padding: 2rem;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  max-width: 100vw;
-  background: linear-gradient(112deg, #000000e3 40%, #1e2144 70%);
-  animation: cardAnimation 5s linear infinite;
+  width: 100vw;
+  padding: 2rem;
+  gap: 10%;
 }
 
-.SectionMainImage {
+.sectionBanner {
   width: 70%;
-  height: 10rem;
-  background: linear-gradient(124deg,#262A56 20%, #171414 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 60%;
+  min-height: 10rem;
+  background: linear-gradient(124deg,#319ee7d1 1%, #ffffff2d 70%);
   border-radius: 1rem;
-  box-shadow: .1rem .1rem 4rem #182278da;
+  box-shadow: -2rem .2rem 10rem #2190ff34;
   overflow: hidden;
 }
 
-.imagecontent {
-  display: flex;
-  position: absolute;
-}
-
-.mainImage {
+.imageBanner {
+  position: relative;
+  z-index: 2;
   width: 10rem;
   height: 10rem;
 }
 
-.textMainContent {
-  position: absolute;
-  left: 15rem;
+.contentTextBanner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  align-items: end;
+  padding-right: 2rem;
+  width: 100%;
 }
 
-.textmain {
-  font-size: 2.5rem;
+.textBanner {
+  font-size: 2.6rem;
   font-weight: bold;
-  color: #ffff;
+  color: #fafafa;
   font-style: italic;
-  text-shadow: .1rem .1rem .3rem #000000b0;
+  text-shadow: .2rem .2rem .5rem #000000cb;
 }
 
-.myName {
-  margin: 2rem 0 1rem 0;
-  background-image: linear-gradient(to left, #6e88c9 20%, #313994 80%);
+.descriptionName {
+  text-align: center;
+  margin: 2rem 0;
+  background-image: linear-gradient(to bottom, #37e1ff 10%, #ffffff 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.descriptionSlog {
+  color: #fff;
+}
+
+
+
+
+/* ------ COLUNA 2 ------- */
 
 .SectionRedes {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 80%;
   gap: 2rem;
   padding: 1rem;
-}
-
-.mySkill {
-  color: #fff;
 }
 
 .redes {
