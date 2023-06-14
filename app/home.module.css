@@ -20,7 +20,7 @@
   flex-wrap: nowrap;
   width: 60%;
   min-height: 10rem;
-  background: linear-gradient(124deg,#319ee7d1 1%, #ffffff2d 70%);
+  background: linear-gradient(124deg,#319ee7d1 1%, #3130302d 70%);
   border-radius: 1rem;
   box-shadow: -2rem .2rem 10rem #2190ff34;
   overflow: hidden;
@@ -38,7 +38,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   padding-right: 2rem;
   width: 100%;
 }
@@ -118,7 +118,6 @@
   font-weight: bold;
 }
 
-
 .imageGmail {
   width: 4rem;
   height: 4rem;
@@ -158,4 +157,37 @@
 }
 
 
-/* ANIMAÇÕES */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    gap: 0;
+  }
+  .sectionBanner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 1rem 0;
+  }
+  .descriptionName {
+    margin: 1.5rem 0 1rem 0;
+  }
+  .SectionRedes {
+    width: 98%;
+    gap: 1rem;
+  }
+  .sectionYureWeb, .sectionSetup {
+    width: 100%;
+    text-align: center;
+  }
+  .banner {
+    width: 87%;
+  }
+  .sectionEmail {
+    width: 100%;
+    gap: .2rem;
+  }
+}
