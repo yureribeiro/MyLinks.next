@@ -1,3 +1,15 @@
+@keyframes cardAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,7 +17,8 @@
   align-items: center;
   height: 100vh;
   max-width: 100vw;
-  background: linear-gradient(112deg, #000000e8 40%, #1e2144 70%);
+  background: linear-gradient(112deg, #000000e3 40%, #1e2144 70%);
+  animation: cardAnimation 5s linear infinite;
 }
 
 .SectionMainImage {
@@ -13,7 +26,7 @@
   height: 10rem;
   background: linear-gradient(124deg,#262A56 20%, #171414 80%);
   border-radius: 1rem;
-  box-shadow: .2rem .2rem 1rem #0000009e;
+  box-shadow: .1rem .1rem 4rem #182278da;
   overflow: hidden;
 }
 
@@ -45,7 +58,7 @@
 
 .myName {
   margin: 2rem 0 1rem 0;
-  background-image: linear-gradient(to left, #445e9e 20%, #252d88 80%);
+  background-image: linear-gradient(to left, #6e88c9 20%, #313994 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,7 +68,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
   padding: 1rem;
 }
 
@@ -78,11 +92,68 @@
   box-shadow: .1rem .1rem .5rem #000000b3;
 }
 
-.sectionYureWeb {
+.sectionEmail {
+  width: 80%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background: linear-gradient(124deg,#30303175 20%, #171414a1 80%);
+  border-radius: .5rem;
+  box-shadow: .2rem .2rem .8rem #00000097;
 }
+
+.textEmailContent {
+  background-image: linear-gradient(to left, #27489b 40%, #7f7fb2 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textEmail {
+  color: #dddd;
+  font-weight: bold;
+}
+
 
 .imageGmail {
   width: 4rem;
   height: 4rem;
 }
+
+.sectionYureWeb {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background: linear-gradient(124deg,#30303175 20%, #171414a1 80%);
+  border-radius: .5rem;
+  box-shadow: .2rem .2rem .8rem  #00000097;
+}
+
+.linkYureWeb {
+  background-image: linear-gradient(to left, #27489b 40%, #7f7fb2 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sectionSetup {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background: linear-gradient(124deg,#30303175 20%, #171414a1 80%);
+  border-radius: .5rem;
+  box-shadow: .2rem .2rem .8rem  #0000009f;
+}
+
+
+/* ANIMAÇÕES */

@@ -64,7 +64,10 @@ export default function Home() {
 
             <section className={styles.sectionEmail}>
               <Image src={gmailIcom} className={styles.imageGmail}/>
-               <p className={styles.textEmail}>Me mande um Email</p>
+              <div>
+                 <p className={styles.textEmailContent}>Me mande um Email</p>
+                <small className={styles.textEmail}>yureribeirocontato@gmail.com</small>
+              </div>
             </section>
 
             <section className={styles.sectionYureWeb}>
@@ -74,7 +77,7 @@ export default function Home() {
             </section>
 
             <section className={styles.sectionSetup}>
-              <Link href={'/desksetup'}>Desk Setup produtos e links</Link>
+              <Link href={'/desksetup'} className={styles.linkYureWeb}>Desk Setup produtos e links</Link>
             </section>
         </section>
       </main>
