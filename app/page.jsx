@@ -79,11 +79,17 @@ export default function Home() {
         </div>
 
         <section className={styles.sectionEmail}>
-          <Image src={gmailIcom} className={styles.imageGmail} />
+          <h3 className={styles.titleEmail}>Contato</h3>
+          <Link 
+            className={styles.linkEmail}
+            href={'/form'}
+            >
+             <Image src={gmailIcom} className={styles.imageGmail} />
           <div>
             <p className={styles.textEmailContent}>Me mande um Email</p>
             <small className={styles.textEmail}>yureribeirocontato@gmail.com</small>
           </div>
+          </Link>
         </section>
 
         <section className={styles.sectionYureWeb}>
@@ -92,7 +98,7 @@ export default function Home() {
             className={styles.linkYureWeb}
             target='blank'
             >
-            Meu Site pessoal e portfólio
+            Meu Site pessoal portfólio
           </Link>
         </section>
 
