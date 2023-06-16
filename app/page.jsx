@@ -98,12 +98,17 @@ export default function Home() {
             className={styles.linkYureWeb}
             target='blank'
             >
-            Meu Site pessoal portfólio
+              <p className={styles.textLink}> Meu Site pessoal portfólio</p>
           </Link>
         </section>
 
         <section className={styles.sectionSetup}>
-          <Link href={'/desksetup'} className={styles.linkYureWeb}>Desk Setup produtos e links</Link>
+          <Link 
+            href={'/desksetup'} 
+            className={styles.linkYureWeb}
+            >
+             <p className={styles.textLink}>Desk Setup produtos e links</p> 
+             </Link>
         </section>
       </section>
     </main>

@@ -4,9 +4,26 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    min-height: 100vh;
     width: 100%;
   }
   
+  .back {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    top: 7%;
+    left: 7%;
+  }
+
+  .imageArrowLeft {
+    width: 1.4rem;
+  }
+
   .title {
     color: #FFD369;
     margin-bottom: 1rem;
@@ -19,7 +36,7 @@
     box-shadow: .1rem .1rem .4rem #0000009c;
     background-color: #06466324;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     gap: .5rem;
     display: flex;
     flex-direction: column;
@@ -40,6 +57,8 @@
     margin-bottom: 1rem;
     max-height: 10rem;
     min-width: 100%;
+  } .input::placeholder {
+    color: #fff;
   }
   
   .textArea {
@@ -53,13 +72,16 @@
     height: 6rem;
     max-height: 10rem;
     min-width: 100%;
+  } .textArea::placeholder {
+    color: #fff;
   }
   
   .buttonsDiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    width: 100%;
+    gap: 3rem;
   }
   
   .button {
@@ -81,18 +103,15 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: .5rem;
     background-color: #0646637d;
-    color: #FFD369;
     box-shadow: .1rem .1rem .2rem #0000006b;
     font-weight: bold;
     border: none;
     border-radius: .5rem;
-    padding: .55rem 1rem;
+    padding: .2rem 1rem;
     transition: .4s;
   } .buttonWpp:hover {
     background-color: #ba8234;
-    color: #000;
   }
   
   .imageWpp {
@@ -104,3 +123,23 @@
     top: 7%;
     transition: .4s;
   }
+
+@media (max-width: 800px) {
+  .title {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    text-align: center;
+  }
+  .form {
+    padding: 1rem;
+    width: 80%;
+  }
+  .buttonsDiv {
+    width: 100%;
+    gap: 2rem;
+    padding-left: 0;
+  }
+}

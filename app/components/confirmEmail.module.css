@@ -1,3 +1,9 @@
+.sectionConfirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -7,16 +13,17 @@
     border: .1rem solid #a7a7a73c;
     border-radius: .5rem;
     box-shadow: .1rem .1rem .4rem #0000009c;
-    background-color: #0646634a;
+    background-color: #064663;
 }
 
 .title {
     color: #FFD369;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .description {
     color: #ffff;
+    font-weight: bold;
 }
