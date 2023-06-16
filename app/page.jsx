@@ -29,39 +29,53 @@ export default function Home() {
         <p className={styles.descriptionSlog}>Desenvolvedor e intusiasta de tecnologia</p>
       </section>
 
-
-
-
       <section className={styles.SectionRedes}>
         <div className={styles.redes}>
-          <a href='#' className={styles.linkRedes}>
+          <Link 
+            href='https://www.youtube.com/channel/UC0JDDjvBJv4vAk9plW8Wpug'
+            className={styles.linkRedes}
+            target='blank'
+           >
             <Image
               src={youtubeIcon}
               alt='logotipo do youtube, icone de play com fundo vermelho.'
               className={styles.imageRedes}
             />
-          </a>
-          <a href='#' className={styles.iconeRedes}>
+          </Link>
+          <Link 
+            href='https://www.instagram.com/yure.ribeiroo' 
+            className={styles.iconeRedes}
+            target='blank'
+            >
             <Image
               src={instagramIcon}
               alt='logotipo do Instagram, retangulo branco com circulo por dentro e fundo roza gradiente.'
               className={styles.imageRedes}
             />
-          </a>
-          <a href='#' className={styles.iconeRedes}>
+            
+          </Link>
+          <Link 
+            href='https://www.linkedin.com/in/yureribeirodev/' 
+            className={styles.iconeRedes}
+            target='blank'
+            >
             <Image
               src={linkedinIcon}
               alt='logotipo do linkedin, letras IN com fundo azul.'
               className={styles.imageRedes}
             />
-          </a>
-          <a href='#' className={styles.iconeRedes}>
+          </Link>
+          <Link
+             href='https://github.com/yureribeiro' 
+             className={styles.iconeRedes}
+             target='blank'
+             >
             <Image
               src={githubIcon}
               alt='logotipo do Github, icone de gatinho com fundo preto'
               className={styles.imageRedes}
             />
-          </a>
+          </Link>
         </div>
 
         <section className={styles.sectionEmail}>
@@ -73,9 +87,13 @@ export default function Home() {
         </section>
 
         <section className={styles.sectionYureWeb}>
-          <a href='#' className={styles.linkYureWeb}>
+          <Link 
+            href='https://yureweb.vercel.app' 
+            className={styles.linkYureWeb}
+            target='blank'
+            >
             Meu Site pessoal e portfólio
-          </a>
+          </Link>
         </section>
 
         <section className={styles.sectionSetup}>
