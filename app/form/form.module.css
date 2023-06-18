@@ -25,7 +25,10 @@
   }
 
   .title {
-    color: #FFD369;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, #37e1ff 10%, #ffffff 90%);
     margin-bottom: 1rem;
     margin-top: 1.5rem;
   }
