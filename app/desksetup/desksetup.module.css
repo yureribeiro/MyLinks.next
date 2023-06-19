@@ -28,8 +28,12 @@
 }
 
 .title {
-    color: #ffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, #37e1ff 20%, #ffffff 90%);
 }
+
 
 .navLinks {
     width: 80%;

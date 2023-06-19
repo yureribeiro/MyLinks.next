@@ -79,7 +79,6 @@ export default function Home() {
         </div>
 
         <section className={styles.sectionEmail}>
-          <h3 className={styles.titleEmail}>Contato</h3>
           <Link 
             className={styles.linkEmail}
             href={'/form'}
@@ -98,7 +97,7 @@ export default function Home() {
             className={styles.linkYureWeb}
             target='blank'
             >
-              <p className={styles.textLink}> Meu Site pessoal portfólio</p>
+              <p className={styles.textLink}>Yure Web, Site Pessoal</p>
           </Link>
         </section>
 
@@ -107,7 +106,7 @@ export default function Home() {
             href={'/desksetup'} 
             className={styles.linkYureWeb}
             >
-             <p className={styles.textLink}>Desk Setup produtos e links</p> 
+             <p className={styles.textLink}>Desk Setup, Periféricos e Links</p> 
              </Link>
         </section>
       </section>
