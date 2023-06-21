@@ -22,6 +22,12 @@ export default function DeskSetup() {
           
           <h1 className={styles.title}>Produtos do meu Setup</h1>
             <nav className={styles.navLinks}>
+                <Link
+                   href={'https://produto.mercadolivre.com.br/MLB-2798158715-cadeira-brizza-3d-back-system-com-apoio-sintetico-preto-_JM'}
+                   className={styles.link}
+                   >
+                  Cadeira Brizza Executiva
+                </Link>
                 <Link 
                   href={'https://pt.aliexpress.com/item/1005003835834361.html?aff_fcid=b073a08bb76c4ec58adb1cc994a7b3ae-1667200332936-01969-_DmhIYiT&tt=CPS_NORMAL&aff_fsk=_DmhIYiT&aff_platform=shareComponent-detail&sk=_DmhIYiT&aff_trace_key=b073a08bb76c4ec58adb1cc994a7b3ae-166720'}
                   className={styles.link}
